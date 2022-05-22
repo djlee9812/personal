@@ -1,0 +1,126 @@
+html, body, header {
+  margin: 0px;
+  padding: 0px;
+  font-family: monospace;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+}
+
+.navbar-background {
+  background-color: #282828;
+}
+
+.nav-link {
+  display: flex;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+
+.nav-item {
+  padding: 15px 20px;
+}
+
+.nav-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://www.gsma.com/newsroom/wp-content/uploads//Korean-Mobile-IoT.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.header-text {
+  color: white;
+}
+
+#down {
+  position: absolute;
+  top:85vh;
+  padding: 20px;
+  font-size: 2.5em;
+}
+#down:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .two-column {
+    padding: 10px 50px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .flex-container {width: 80%;}
+  .two-column {
+    width: 50%;
+    padding: 20px;
+  }
+}
+
+.column-img {
+  width: 100%;
+}
+
+footer {
+  background-color: #282828;
+  height: 20vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: cneter;
+  padding: 30px;
+  margin: auto;
+}
+
+#links {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+#links li {
+  padding: 10px 20px;
+}
+
+#links a {
+  font-size: 1.5em;
+  color: inherit;
+  text-decoration: none;
+}
+
+#links a:hover {
+  opacity: 0.8;
+}
