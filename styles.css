@@ -80,7 +80,7 @@ main {
 }
 
 .container {
-  padding: 15px 20px;
+  padding: 15px 10px;
 }
 
 .text-center {
@@ -177,4 +177,8 @@ figure {
   transform: translate(-50%, -50%);
   color: white;
   font-weight: 400;
+}
+
+.margin-sm {
+  margin: 10px;
 }
