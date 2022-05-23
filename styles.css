@@ -6,6 +6,7 @@ html, body, header {
 
 .navbar {
   width: 100%;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,13 +37,13 @@ html, body, header {
 
 header {
   height: 100vh;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://www.gsma.com/newsroom/wp-content/uploads//Korean-Mobile-IoT.jpg");
+  /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://www.gsma.com/newsroom/wp-content/uploads//Korean-Mobile-IoT.jpg"); */
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("public/glacier.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-size: cover;
-  margin-bottom: 30px;
 }
 
 .header-text {
@@ -61,17 +62,26 @@ header {
 }
 
 main {
+  padding-top: 50px;
   min-height: 80vh;
 }
 
-.flex-container {
+.container {
+  padding: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-row {
   display: flex;
   flex-direction: row;
   margin: auto;
 }
 
 @media only screen and (max-width: 768px) {
-  .flex-container {
+  .flex-row {
     flex-direction: column;
   }
   .two-column {
@@ -81,7 +91,7 @@ main {
 
 
 @media only screen and (min-width: 768px) {
-  .flex-container {width: 80%;}
+  .flex-row {width: 80%;}
   .two-column {
     width: 50%;
     padding: 20px;
@@ -123,4 +133,117 @@ footer {
 
 #links a:hover {
   opacity: 0.8;
+}
+
+.masonry {
+  height: 80vh;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.masonry-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+figure {
+  margin: 0;
+}
+
+.cell--1 {
+  grid-column: 1 / 6;
+  grid-row: 1 / 5;
+}
+
+.cell--2 {
+  grid-column: 6 / 9;
+  grid-row: 1 / 6;
+}
+
+.cell--3 {
+  grid-column: 9 / 13;
+  grid-row: 1 / 4;
+}
+
+.cell--4 {
+  grid-column: 1 / 6;
+  grid-row: 5 / 8;
+}
+
+.cell--5 {
+  grid-column: 13 / -1;
+  grid-row: 1 / 6;
+}
+
+.cell--6 {
+  grid-column: 9 / 13;
+  grid-row: 4 / 9;
+}
+
+.cell--7 {
+  grid-column: 6 / 10;
+  grid-row: 9 / 12;
+}
+
+.cell--8 {
+  grid-column: 10 / -1;
+  grid-row: 9 / 12;
+}
+
+.cell--9 {
+  grid-column: 13 / -1;
+  grid-row: 6 / 9;
+}
+
+.cell--10 {
+  grid-column: 1 / 4;
+  grid-row: 8 / 13;
+}
+
+.cell--11 {
+  grid-column: 4 / 6;
+  grid-row: 8 / 13;
+}
+
+.cell--12 {
+  grid-column: 6 / 12;
+  grid-row: 12 / -1;
+}
+
+.cell--13 {
+  grid-column: 12 / -1;
+  grid-row: 12 / -1;
+}
+
+.cell--14 {
+  grid-column: 6 / 9;
+  grid-row: 6 / 9;
+}
+
+.cell--15 {
+  grid-column: 1 / 6;
+  grid-row: 13 / -1;
+}
+
+.opaque-image {
+  filter: brightness(70%);
+}
+
+figure {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
