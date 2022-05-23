@@ -22,8 +22,10 @@ window.smoothScroll = function(target) {
         if (!scrollContainer) return;
         scrollContainer.scrollTop += 1;
     } while (scrollContainer.scrollTop == 0);
-
     var targetY = -50;
+    if (window.innerWidth < 768) {
+        targetY = 0;
+    }
     do { //find the top of target relatively to the container
         if (target == scrollContainer) break;
         targetY += target.offsetTop;
