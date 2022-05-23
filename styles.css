@@ -88,6 +88,9 @@ main {
   footer {
     padding: 15px;
   }
+  .navbar {
+    position: absolute;
+  }
 }
 
 
