@@ -1,7 +1,14 @@
 html, body, header {
   margin: 0px;
   padding: 0px;
-  font-family: monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+p, span, a {
+  font-family: 'Inconsolata', monospace;
 }
 
 .navbar {
@@ -34,6 +41,10 @@ html, body, header {
   color: white;
 }
 
+li.active a {
+  color: #d4fcff;
+}
+
 header {
   height: 100vh;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("public/glacier.jpg");
@@ -46,6 +57,10 @@ header {
 
 .header-text {
   color: white;
+}
+
+#header-title {
+  font-size: 3em;
 }
 
 #down {
@@ -161,4 +176,5 @@ figure {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  font-weight: 400;
 }
